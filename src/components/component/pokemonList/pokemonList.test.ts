@@ -8,7 +8,7 @@ describe('Given PokemonList component', () => {
 
     const element = new PokemonList('main');
     expect(element).toBeInstanceOf(PokemonList);
-    const li = screen.getByRole('listItem');
-    expect(li).toBeInTheDocument();
+    const ul = screen.getByRole('list');
+    expect(ul).toBeInTheDocument();
   });
 });
