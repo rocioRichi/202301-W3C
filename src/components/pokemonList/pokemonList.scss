@@ -3,11 +3,18 @@
   ul {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
   }
+
   .card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid gray;
+    width: 20vw;
+    border: 10px solid rgb(218, 171, 52);
     padding: 1rem;
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+  }
+  .card img {
+    width: 20vw;
   }
 }
