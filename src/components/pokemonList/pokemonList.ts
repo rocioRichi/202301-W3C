@@ -1,5 +1,5 @@
 import { Component } from '../component/component';
-import './list.scss';
+import './pokemonList.scss';
 
 export class PokemonList extends Component {
   constructor(public selector: string) {

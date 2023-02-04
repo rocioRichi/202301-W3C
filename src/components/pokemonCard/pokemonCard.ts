@@ -11,7 +11,7 @@ export class PokemonCard extends Component {
   private createTemplate() {
     return `
 <li class="card"><span>${this.pokemon.name}</span>
-           <span>${this.pokemon.sprite}</span>
+           <img src="${this.pokemon.sprite}">
         </li>
     `;
   }
