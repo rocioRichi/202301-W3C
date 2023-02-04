@@ -6,6 +6,6 @@ export class Pokemon {
     public name: string,
     public weight: number,
     public sprite: string,
-    public types: PokemonType[]
+    public pokemonTypes: PokemonType[]
   ) {}
 }

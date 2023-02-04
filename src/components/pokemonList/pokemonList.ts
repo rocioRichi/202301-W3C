@@ -1,4 +1,4 @@
-import { Component } from '../component';
+import { Component } from '../component/component';
 import './list.scss';
 
 export class PokemonList extends Component {
