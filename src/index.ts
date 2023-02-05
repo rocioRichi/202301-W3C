@@ -11,6 +11,9 @@ const fetchPokemon = async (pokemon: { name: string; url: string }) => {
   const pokemonModel = new Pokemon(
     pokemonApi.id,
     pokemonApi.name,
+    // (pokemonApi.name =
+    //   pokemonApi.name[0].toUpperCase() + pokemonApi.substring(1)),
+
     pokemonApi.weight,
     pokemonApi.sprites.front_default,
     []
@@ -23,8 +26,8 @@ async function getPokemon() {
   const responseApi = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
 
   const pokemonsApi = await responseApi.json();
-  const sortedPokemos = pokemonsApi.results.reverse();
-  for (const pokemonApi of sortedPokemos) {
+  const sortedPokemons = pokemonsApi.results.reverse();
+  for (const pokemonApi of sortedPokemons) {
     await fetchPokemon(pokemonApi);
   }
 }
