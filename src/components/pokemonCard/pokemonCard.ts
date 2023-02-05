@@ -10,7 +10,7 @@ export class PokemonCard extends Component {
 
   private createTemplate() {
     return `
-<li class="card"><span>${this.pokemon.name}</span>
+<li class="card"><span>${this.pokemon.name.toUpperCase()}</span>
            <img src="${this.pokemon.sprite}">
         </li>
     `;
