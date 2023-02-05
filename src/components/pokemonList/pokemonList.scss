@@ -8,13 +8,57 @@
 
   .card {
     width: 20vw;
-    border: 10px solid rgb(218, 171, 52);
     padding: 1rem;
     display: block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
+    background-image: repeating-linear-gradient(
+        -6deg,
+        #f5cd24,
+        #f5cd24 0px,
+        transparent 1px,
+        transparent 1px,
+        #f5cd24 2px
+      ),
+      repeating-linear-gradient(
+        84deg,
+        #f5cd24,
+        #f5cd24 0px,
+        transparent 1px,
+        transparent 1px,
+        #f5cd24 2px
+      ),
+      repeating-linear-gradient(
+        174deg,
+        #f5cd24,
+        #f5cd24 0px,
+        transparent 1px,
+        transparent 1px,
+        #f5cd24 2px
+      ),
+      repeating-linear-gradient(
+        264deg,
+        #f5cd24,
+        #f5cd24 0px,
+        transparent 1px,
+        transparent 1px,
+        #f5cd24 2px
+      );
+    background-size: 8px 100%, 100% 8px, 8px 100%, 100% 8px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    text-align: left;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f5cd24;
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
+      0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
   }
-  .card img {
-    width: 20vw;
-  }
+}
+.card img {
+  width: 20vw;
 }
